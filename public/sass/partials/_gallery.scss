@@ -1,0 +1,34 @@
+.superbus-photo-wall {
+  background: $theme-gray;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+
+  .superbus-photo-wrapper {
+    display: inline-block;
+    padding: 5px;
+
+    &:nth-child(1) {
+      width: calc( ( 100% - 5px ) * 0.595 );
+      height: auto;
+    }
+    &:nth-child(2) {
+      width: calc( ( 100% - 5px ) * 0.405 );
+      height: auto;
+    }
+    &:nth-child(3) {
+      width: calc( ( 100% - 5px ) * 0.455 );
+      height: auto;
+    }
+    &:nth-child(4) {
+      width: calc( ( 100% - 5px ) * 0.545 );
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

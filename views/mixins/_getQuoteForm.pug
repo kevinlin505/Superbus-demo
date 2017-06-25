@@ -1,0 +1,16 @@
+mixin getQuoteForm()
+  form.superbus-form(action="/quote" method="GET")
+    span.superbus-input-wrapper.superbus-location-wrapper
+      span.superbus-location-pickup
+        input.superbus-location(type="text" id="pickup" name="pickup" placeholder="Location: pick up" required)
+      span.superbus-location-dropoff
+        input.superbus-location(type="text" id="dropoff" name="dropoff" placeholder="Location: drop off" required)
+    span.superbus-input-wrapper.superbus-calender-wrapper
+      span.superbus-departure
+        input.superbus-calender(type="text" id="startdate" name="startdate" placeholder="Departure" required)
+        i.fa.fa-calendar(aria-hidden="true")
+      span.superbus-return
+        input.superbus-calender(type="text" id="enddate" name="enddate" placeholder="Return" required)
+        i.fa.fa-calendar(aria-hidden="true")
+    button.superbus-getquote-btn
+      i.fa.fa-search(aria-hidden="true")

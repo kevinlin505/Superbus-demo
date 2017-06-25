@@ -1,0 +1,83 @@
+.superbus-nav {
+  background: $theme-white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.superbus-nav-section {
+  display: flex;
+  padding: 5px 10px;
+  line-height: 40px;
+}
+
+.superbus-nav-section-user {
+  width: 200px;
+  font-size: 14px;
+}
+
+.superbus-nav-logo {
+  display: flex;
+  width: 200px;
+  font-weight: 700;
+
+  svg {
+    width: auto;
+    height: 40px;
+
+    path {
+      fill: $theme-orange;
+    }
+  }
+}
+
+.superbus-site-name {
+  display: inline-block;
+  margin-left: 5px;
+  color: $theme-orange;
+  font-size: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+li.superbus-nav-item {
+  list-style-type: none;
+  height: 40px;
+  padding: 0 20px;
+
+  .superbus-nav-section-user & {
+    padding: 0 5px;
+  }
+}
+
+.superbus-nav-link {
+  color: $theme-gray;
+
+  &:hover,
+  &.superbus-nav-link-active {
+    color: $theme-orange;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .superbus-nav-item {
+    .superbus-site-name {
+      display: none;
+    }
+
+    .superbus-nav-section-pages & {
+      display: none;
+
+      &:first-child {
+        display: inline-block;
+      }
+
+      .superbus-nav-logo {
+        width: auto;
+      }
+    }
+  }
+
+  .superbus-nav-section-user {
+    width: auto;
+  }
+}

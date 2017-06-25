@@ -1,0 +1,102 @@
+.superbus-main {
+  background: url($image-path+'quote_background.jpg') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 550px;
+  max-height: 600px;
+  padding: 40px 0;
+}
+
+.super-quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.superbus-message {
+  color: $theme-white;
+  margin-bottom: 30px;
+
+  .superbus-slogan {
+    text-transform: uppercase;
+  }
+}
+
+.superbus-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.superbus-input-wrapper {
+  position: relative;
+
+  .superbus-departure,
+  .superbus-return {
+    position: relative;
+  }
+
+  .fa {
+    font-size: 20px;
+    color: $theme-orange;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+  }
+}
+
+.superbus-location,
+.superbus-calender {
+  width: 300px;
+  height: 52px;
+  border: none;
+  border-right: 1px solid $theme-lightgray;
+  padding: 0 20px;
+}
+
+.superbus-calender {
+  width: 150px;
+
+  .superbus-return &{
+    border: none;
+  }
+}
+
+.superbus-getquote-btn {
+  background: $theme-orange;
+  font-size: 24px;
+  color: $theme-white;
+  min-width: 50px;
+  height: 52px;
+  padding: 0 30px;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .superbus-slogan {
+    font-size: 22px;
+  }
+
+  .superbus-welcome-message {
+    font-size: 16px;
+  }
+
+  .superbus-input-wrapper {
+    input {
+      margin-bottom: 10px;
+    }
+  }
+
+  .superbus-getquote-btn {
+    width: 300px;
+  }
+
+  .fa-search:before {
+    content: "Get Quote" !important;
+    font-family: $font;
+  }
+}

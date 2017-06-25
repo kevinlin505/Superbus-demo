@@ -1,0 +1,41 @@
+extends layout
+
+include mixins/_getQuoteForm
+include mixins/_getExperiences
+
+block content
+  .superbus-main
+    .super-quote-section
+      .superbus-message
+        h1.superbus-slogan Safty is our top priority
+        h4.superbus-welcome-message Choosing the best bus for you.
+      +getQuoteForm()
+  
+  .superbus-testimonial-section
+    .superbus-testimony
+      .superbus-testimony-wrapper
+        h3.superbus-subheader Make the super bus possible
+        .superbus-testimony-message
+          span.superbus-company-name= h.siteName
+          span is a convenient way to find the best bus for any event across North America. Just a little information, then you will get the most suitable bus. Just tell us what are your requirements, our customer service will contact you soon. All book history can be found in your account.
+        h3.superbus-subheader The Super Bus Experience
+      +getExperiences()
+
+  .superbus-gallery-section
+    .superbus-photo-wall
+      span.superbus-photo-wrapper
+        img(src='/images/photos/gallery1.jpg' alt='gallery image')
+      span.superbus-photo-wrapper
+        img(src='/images/photos/gallery2.jpg' alt='gallery image')
+      span.superbus-photo-wrapper
+        img(src='/images/photos/gallery3.jpg' alt='gallery image')
+      span.superbus-photo-wrapper
+        img(src='/images/photos/gallery4.jpg' alt='gallery image')
+
+  .superbus-review-section
+    .superbus-selected-review
+      .superbus-quote
+        span The shuttles and times were great, as a performer at Hulaween I wouldn't have made it to the festival without Bus.com. My friends had never heard of the concept before and they were amazed. The shuttle was awesome and should be provided for every festival. You made my trip affordable and efficient!
+      .superbus-quote-auther Allison Segel, rider, Suwanee Halloween
+
+  .superbus-footer-section &copy; copyright

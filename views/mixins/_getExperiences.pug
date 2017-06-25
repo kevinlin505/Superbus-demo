@@ -1,0 +1,7 @@
+mixin getExperiences()
+  .superbus-experiences
+    each experience in h.experiences
+      .superbus-experience
+        i.fa(class=`${experience.icon}` aria-hidden="true")
+        h5= experience.title
+        p= experience.description

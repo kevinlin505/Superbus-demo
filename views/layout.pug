@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= `${title} | ${h.siteName}`
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    link(rel='stylesheet', href='/dist/style.css')
+    link(rel="shortcut icon" type="image/png" href="/images/icons/doughnut.png")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    block header
+      header.top
+        nav.superbus-nav
+          .superbus-nav-section.superbus-nav-section-pages
+            li.superbus-nav-item
+              a.superbus-nav-logo(href="/")
+                != h.icon('logo')
+                span.superbus-site-name #{h.siteName}
+            each item in h.menu
+              li.superbus-nav-item
+                a.superbus-nav-link(href=item.slug, class=(currentPath.startsWith(item.slug) ? 'superbus-nav-link-active' : ''))
+                  span #{item.title}
+          .superbus-nav-section.superbus-nav-section-user
+              li.superbus-nav-item: a.superbus-nav-link(href="/register", class=(currentPath.startsWith('/register') ? 'superbus-nav-link-active' : '')) Register
+              span /
+              li.superbus-nav-item: a.superbus-nav-link(href="/login", class=(currentPath.startsWith('/login') ? 'superbus-nav-link-active' : '')) Log In
+    .content
+      block content
+
+    block scripts
+      script(src="//use.fontawesome.com/deaecc9b2f.js")
+      script(src=`//maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+      script(src="/dist/App.bundle.js")

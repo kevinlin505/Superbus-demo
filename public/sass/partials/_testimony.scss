@@ -1,0 +1,59 @@
+.superbus-testimony {
+  padding: 30px 20px 0;
+  text-align: center;
+}
+
+.superbus-testimony-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .superbus-subheader {
+    margin-bottom: 30px; 
+  }
+
+  .superbus-testimony-message {
+    padding: 15px 0 25px;
+    margin: 30px 0;
+    line-height: 2.2;
+    border-top: 1px solid $theme-border;
+    border-bottom: 1px solid $theme-border;
+  }
+
+  .superbus-company-name {
+    display: inline-block;
+    font-size: 26px;
+    margin-right: 10px;
+    color: $theme-orange; 
+  }
+}
+
+.superbus-experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid $theme-border;
+}
+
+.superbus-experience {
+  max-width: 300px;
+  padding: 20px 15px; 
+
+  .fa {
+    font-size: 30px;
+    color: $theme-orange;
+  }
+
+  h5, p {
+    font-weight: 100;
+  }
+
+  h5 {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}

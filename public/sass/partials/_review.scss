@@ -1,0 +1,43 @@
+.superbus-selected-review {
+  padding: 35px 10px 30px 45px;
+  border-bottom: 1px solid $theme-border;
+  margin-bottom: 30px;
+}
+
+.superbus-quote {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  span {
+    position: relative;
+
+    &::before,
+    &::after {
+      font-family: FontAwesome;
+      font-size: 22px;
+      position: absolute;
+      color: $theme-orange;
+    }
+
+    &::before {
+      content: '\f10d';
+      top: -10px;
+      left: -30px;
+    }
+
+    &::after {
+      content: '\f10e';
+      bottom: -10px;
+      right: -30px;
+    }
+  }
+}
+
+.superbus-quote-auther {
+  font-weight: 100;
+  color: $theme-lightgray;
+  max-width: 900px;
+  margin: 15px auto;
+  letter-spacing: 1px;
+}

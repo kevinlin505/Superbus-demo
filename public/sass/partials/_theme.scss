@@ -1,0 +1,21 @@
+$theme-orange: #f15a24;
+$theme-gray: #666;
+$theme-white: #fff;
+$theme-black: #000;
+$theme-lightblack: #333;
+$theme-lightgray: #bbb;
+$theme-text: #4d4d4d;
+$theme-border: #ddd;
+
+$font: "Helvetica Neue", Arial, sans-serif !default;
+
+$image-path: '/images/photos/';
+
+body {
+  color: $theme-text;
+}
+
+input {
+  font-weight: 100;
+  color: $theme-lightblack;
+}
