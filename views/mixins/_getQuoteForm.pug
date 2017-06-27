@@ -1,16 +1,16 @@
-mixin getQuoteForm()
-  form.superbus-form(action="/quote" method="GET")
+mixin getQuoteForm(request={})
+  form.superbus-form(action="/quote" method="POSt")
     span.superbus-input-wrapper.superbus-location-wrapper
       span.superbus-location-pickup
-        input.superbus-location(type="text" id="pickup" name="pickup" placeholder="Location: pick up" required)
+        input.superbus-location(type="text" id="pickup" name="pickup" placeholder="Location: pick up" value=`${request.pickup || ''}` required)
       span.superbus-location-dropoff
-        input.superbus-location(type="text" id="dropoff" name="dropoff" placeholder="Location: drop off" required)
+        input.superbus-location(type="text" id="dropoff" name="dropoff" placeholder="Location: drop off" value=`${request.dropoff || ''}` required)
     span.superbus-input-wrapper.superbus-calender-wrapper
       span.superbus-departure
-        input.superbus-calender(type="text" id="startdate" name="startdate" placeholder="Departure" required)
+        input.superbus-calender(type="text" id="startdate" name="startdate" placeholder="Departure" value=`${request.startdate || ''}` required)
         i.fa.fa-calendar(aria-hidden="true")
       span.superbus-return
-        input.superbus-calender(type="text" id="enddate" name="enddate" placeholder="Return" required)
+        input.superbus-calender(type="text" id="enddate" name="enddate" placeholder="Return" value=`${request.enddate || ''}` required)
         i.fa.fa-calendar(aria-hidden="true")
     button.superbus-getquote-btn
       i.fa.fa-search(aria-hidden="true")

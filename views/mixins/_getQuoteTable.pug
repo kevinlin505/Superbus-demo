@@ -1,0 +1,19 @@
+mixin getQuoteTable(quotes)
+  table.table.superbus-quote-table
+    thead
+      tr
+        th Pick up Information
+        th Drop off Information
+        th Reserve
+    tbody
+      each quote in quotes
+        tr
+          td
+            span= quote.pickup.time
+            span= quote.pickup.address
+          td
+            span= quote.dropoff.time
+            span= quote.dropoff.address
+          td
+            span.superbus-reserve-estimate #{quote.reserve.estimate}
+            span.superbus-reserve-deposit #{quote.reserve.deposit}

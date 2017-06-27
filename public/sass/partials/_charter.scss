@@ -34,6 +34,10 @@
 .superbus-input-wrapper {
   position: relative;
 
+  input {
+    margin-bottom: 10px;
+  }
+
   .superbus-departure,
   .superbus-return {
     position: relative;
@@ -76,19 +80,13 @@
   border: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .superbus-slogan {
     font-size: 22px;
   }
 
   .superbus-welcome-message {
     font-size: 16px;
-  }
-
-  .superbus-input-wrapper {
-    input {
-      margin-bottom: 10px;
-    }
   }
 
   .superbus-getquote-btn {

@@ -1,0 +1,19 @@
+extends layout
+
+include mixins/_getQuoteForm
+include mixins/_getQuoteTable
+
+block content
+  .superbus-form-section
+    .super-quote-section
+      .superbus-message
+        h3 Book Charter Bus
+        .superbus-description Change your requirements and update search, for the best quote.
+      +getQuoteForm(request)
+
+  .superbus-detail-section
+    .superbus-detail-wrapper
+      .superbus-message
+        .superbus-description Ahjust some information, the quote may vary.
+        .superbus-description Please choose your departure date below to confirm your Charter cost.
+      +getQuoteTable(quotes)

@@ -78,7 +78,7 @@ li.superbus-nav-item {
   .superbus-nav-link:hover, .superbus-nav-link.superbus-nav-link-active {
     color: #f15a24; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .superbus-nav-item .superbus-site-name {
     display: none; }
   .superbus-nav-section-pages .superbus-nav-item {
@@ -135,6 +135,8 @@ li.superbus-nav-item {
 
 .superbus-input-wrapper {
   position: relative; }
+  .superbus-input-wrapper input {
+    margin-bottom: 10px; }
   .superbus-input-wrapper .superbus-departure,
   .superbus-input-wrapper .superbus-return {
     position: relative; }
@@ -170,13 +172,11 @@ li.superbus-nav-item {
   padding: 0 30px;
   border: none; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .superbus-slogan {
     font-size: 22px; }
   .superbus-welcome-message {
     font-size: 16px; }
-  .superbus-input-wrapper input {
-    margin-bottom: 10px; }
   .superbus-getquote-btn {
     width: 300px; }
   .fa-search:before {
@@ -286,6 +286,31 @@ li.superbus-nav-item {
   max-width: 900px;
   margin: 15px auto;
   letter-spacing: 1px; }
+
+.superbus-form-section {
+  background: url("/images/photos//quote_background.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 40px 0; }
+
+.superbus-quote-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .superbus-quote-table thead tr {
+    background: #f15a24; }
+  .superbus-quote-table thead th {
+    color: #fff;
+    text-align: center; }
+  .superbus-quote-table span {
+    display: block;
+    text-align: center; }
 
 .superbus-footer-section {
   text-align: center;
