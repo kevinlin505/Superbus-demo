@@ -6,7 +6,6 @@ exports.homePage = (req, res) => {
 
 exports.getQuote = (req, res) => {
   const quotes = sample['brooklyn'];
-  console.log(quotes);
   const request = req.body;
   res.render('quote', { title: 'Get a quote', quotes, request });
 };

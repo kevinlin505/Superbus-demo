@@ -2,6 +2,7 @@ extends layout
 
 include mixins/_getQuoteForm
 include mixins/_getQuoteTable
+include mixins/_getContactForm
 
 block content
   .superbus-form-section
@@ -14,6 +15,12 @@ block content
   .superbus-detail-section
     .superbus-detail-wrapper
       .superbus-message
-        .superbus-description Ahjust some information, the quote may vary.
+        .superbus-description Adjust some information, the quote may vary.
         .superbus-description Please choose your departure date below to confirm your Charter cost.
       +getQuoteTable(quotes)
+
+  .superbus-contact-section
+    .superbus-contact-wrapper
+      .superbus-message
+        span We still need a few more details from you, and we will contact you soon.
+      +getContactForm()

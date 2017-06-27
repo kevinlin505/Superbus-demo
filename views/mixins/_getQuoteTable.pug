@@ -15,5 +15,5 @@ mixin getQuoteTable(quotes)
             span= quote.dropoff.time
             span= quote.dropoff.address
           td
-            span.superbus-reserve-estimate #{quote.reserve.estimate}
-            span.superbus-reserve-deposit #{quote.reserve.deposit}
+            span.superbus-reserve-estimate $ #{quote.reserve.estimate}
+            span.superbus-reserve-deposit $#{quote.reserve.deposit} Deposit

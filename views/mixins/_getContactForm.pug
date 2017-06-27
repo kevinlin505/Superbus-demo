@@ -1,0 +1,17 @@
+mixin getContactForm()
+  .superbus-form-wrapper
+    .superbus-form-header Contact Information
+    form.superbus-contact-form(action="/reserve" method="POST")
+      .superbus-input-fields
+        .superbus-name-fields
+          label First Name
+          input(id="firstname" name="firstname" required)
+          label Last Name
+          input(id="lastname" name="lastname" required)
+        .superbus-contact-fields
+          label Email Address
+          input(id="firstname" name="firstname" required)
+          label Phone Number
+          input(id="lastname" name="lastname" required)
+      .superbus-form-line
+      button.superbus-reserve-button Book Now

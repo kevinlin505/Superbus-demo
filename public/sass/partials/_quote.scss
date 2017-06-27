@@ -7,6 +7,16 @@
   padding: 40px 0;
 }
 
+// Quote Table
+.superbus-detail-wrapper {
+  padding: 30px 10px;
+
+  .superbus-message {
+    color: $theme-text;
+    text-align: center;
+  }
+}
+
 .superbus-quote-table {
   width: 100%;
   max-width: 1000px;
@@ -23,8 +33,99 @@
     }
   }
 
+  tbody {
+    tr {
+      &:last-child {
+        border-bottom: 1px solid $theme-gray;
+      }
+    }
+
+    td {
+    padding: 20px 10px;
+
+      &:last-child {
+        min-width: 100px;
+      }
+    }
+  }
+
   span {
     display: block;
+    font-size: 14px;
     text-align: center;
+  }
+
+  .superbus-reserve-estimate {
+    font-size: 16px;
+  }
+
+  .superbus-reserve-deposit {
+    font-size: 12px;
+  }
+}
+
+// Contact Info
+.superbus-contact-wrapper {
+  padding: 0 10px;
+  
+  .superbus-message {
+    color: $theme-text;
+    text-align: center;
+  }
+
+  .superbus-form-header {
+    background: $theme-gray;
+    color: $theme-white;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .superbus-contact-form {
+    text-align: right;
+    padding: 0 15px;
+  }
+
+  .superbus-input-fields {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 30px;
+    text-align: left;
+
+    label {
+      display: block;
+      margin: 10px 0 2px;
+    }
+
+    input {
+      width: 100%;
+      min-width: 280px;
+    }
+  }
+
+  .superbus-name-fields,
+  .superbus-contact-fields {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .superbus-form-line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $theme-gray;
+  }
+
+  .superbus-reserve-button {
+    background: $theme-orange;
+    color: $theme-white;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border: none;
   }
 }

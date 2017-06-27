@@ -299,6 +299,12 @@ li.superbus-nav-item {
   width: 100%;
   padding: 40px 0; }
 
+.superbus-detail-wrapper {
+  padding: 30px 10px; }
+  .superbus-detail-wrapper .superbus-message {
+    color: #4d4d4d;
+    text-align: center; }
+
 .superbus-quote-table {
   width: 100%;
   max-width: 1000px;
@@ -308,9 +314,75 @@ li.superbus-nav-item {
   .superbus-quote-table thead th {
     color: #fff;
     text-align: center; }
+  .superbus-quote-table tbody tr:last-child {
+    border-bottom: 1px solid #666; }
+  .superbus-quote-table tbody td {
+    padding: 20px 10px; }
+    .superbus-quote-table tbody td:last-child {
+      min-width: 100px; }
   .superbus-quote-table span {
     display: block;
+    font-size: 14px;
     text-align: center; }
+  .superbus-quote-table .superbus-reserve-estimate {
+    font-size: 16px; }
+  .superbus-quote-table .superbus-reserve-deposit {
+    font-size: 12px; }
+
+.superbus-contact-wrapper {
+  padding: 0 10px; }
+  .superbus-contact-wrapper .superbus-message {
+    color: #4d4d4d;
+    text-align: center; }
+  .superbus-contact-wrapper .superbus-form-header {
+    background: #666;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center; }
+  .superbus-contact-wrapper .superbus-contact-form {
+    text-align: right;
+    padding: 0 15px; }
+  .superbus-contact-wrapper .superbus-input-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0 30px;
+    text-align: left; }
+    .superbus-contact-wrapper .superbus-input-fields label {
+      display: block;
+      margin: 10px 0 2px; }
+    .superbus-contact-wrapper .superbus-input-fields input {
+      width: 100%;
+      min-width: 280px; }
+  .superbus-contact-wrapper .superbus-name-fields,
+  .superbus-contact-wrapper .superbus-contact-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45%;
+    min-width: 300px; }
+  .superbus-contact-wrapper .superbus-form-line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #666; }
+  .superbus-contact-wrapper .superbus-reserve-button {
+    background: #f15a24;
+    color: #fff;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border: none; }
 
 .superbus-footer-section {
   text-align: center;
