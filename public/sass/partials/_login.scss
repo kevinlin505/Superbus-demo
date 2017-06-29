@@ -23,10 +23,13 @@
   }
 }
 
-.superbus-form-wrapper {
-  padding: 25px 30px 45px;
-  text-align: left;
-  border: 1px solid $theme-lightgray;
+.superbus-login-wrapper,
+.superbus-registration-wrapper {
+  .superbus-form-wrapper {
+    padding: 25px 30px 45px;
+    text-align: left;
+    border: 1px solid $theme-lightgray;
+  }
 
   h5 {
     color: $theme-orange;
@@ -38,7 +41,8 @@
     color: $theme-text;
   }
 
-  form {
+  .superbus-login-form,
+  .superbus-registration-form {
     display: flex;
     flex-direction: column;
   }

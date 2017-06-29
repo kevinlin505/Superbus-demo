@@ -9,7 +9,7 @@ block content
       .superbus-form-wrapper
         h5 Register
         span By creating an account, you will be able to easily manage existing bookings.
-        form(action="/register" method="POST")
+        form.superbus-registration-form(action="/register" method="POST")
           label(for="firstname") First Name
           input(type="text" id="firstname" name="firstname" required)
           label(for="lastname") Last Name

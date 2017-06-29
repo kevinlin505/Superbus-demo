@@ -10,6 +10,6 @@ router.get('/register', charterController.registerPage);
 
 router.post('/quote', charterController.getQuote);
 
-router.get('/account', charterController.accountPage);
+router.post('/account', charterController.accountPage);
 
 module.exports = router;
