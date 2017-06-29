@@ -1,0 +1,154 @@
+.superbus-registration-wrapper,
+.superbus-login-wrapper {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+
+  .superbus-site-name {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px;
+    text-transform: capitalize;
+
+    svg {
+      width: auto;
+      height: 40px;
+      margin-right: 10px;
+
+      path {
+        fill: $theme-orange;
+      }
+    }
+  }
+}
+
+.superbus-form-wrapper {
+  padding: 25px 30px 45px;
+  text-align: left;
+  border: 1px solid $theme-lightgray;
+
+  h5 {
+    color: $theme-orange;
+    margin-bottom: 0;
+  }
+
+  span {
+    font-size: 10px;
+    color: $theme-text;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 15px 0 2px;
+
+    &.form-check-label {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  input {
+    height: 36px;
+    padding-left: 10px;
+
+    &.form-check-input{
+      height: 14px;
+      margin-left: 0;
+    }
+  }
+
+  .superbus-check {
+    margin: 10px 0 0; 
+  }
+
+  .superbus-agreement {
+    font-size: 10px;
+    color: $theme-orange;
+    margin: 10px 0;
+  }
+}
+
+.superbus-login-line{
+  text-align: center;
+
+  .superbus-login-wrapper & {
+    margin-top: 20px;
+
+    span {
+      &::before,
+      &::after {
+        width: 99%;
+      }
+
+      &::before {
+        left: -105%;
+      }
+
+      &::after {
+        right: -105%;
+      }
+    }
+  }
+
+  span {
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+    color: $theme-orange;
+
+    &::before,
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 99%;
+      height: 2px;
+      border-bottom: 1px solid $theme-lightgray;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      left: -110%;
+    }
+
+    &::after {
+      right: -110%;
+    }
+  }
+}
+
+button {
+  .superbus-login-wrapper &,
+  .superbus-registration-wrapper &{
+    margin-top: 30px;
+  }
+
+  .superbus-login-wrapper & {
+    &.superbus-login-button {
+      background: $theme-orange;
+    }
+
+    &.superbus-registration-button {
+      background: $theme-lightgray;
+      margin-top: 20px;
+    }
+  }
+
+  &.superbus-registration-button {
+    background: $theme-orange;
+    color: $theme-white;
+    height: 40px;
+  }
+
+  &.superbus-login-button {
+    color: $theme-white;
+    height: 40px;
+    margin-top: 20px;
+  }
+}

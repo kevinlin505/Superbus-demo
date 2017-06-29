@@ -36,7 +36,7 @@
   tbody {
     tr {
       &:last-child {
-        border-bottom: 1px solid $theme-gray;
+        border-bottom: 1px solid $theme-lightgray;
       }
     }
 
@@ -71,6 +71,12 @@
   .superbus-message {
     color: $theme-text;
     text-align: center;
+  }
+
+  .superbus-form-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .superbus-form-header {

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  .superbus-login
+    .superbus-login-wrapper
+      .superbus-site-name
+        != h.icon('logo')
+        span Super Bus
+      .superbus-form-wrapper
+        h5 Sign In
+        span already have an account? Please log in to continue
+        form(action="/register" method="POST")
+          label(for="email") Email Address
+          input(type="text" id="email" name="email" required)
+          label(for="password") Password
+          input(type="text" id="password" name="password" required)          
+          
+          .superbus-check.form-check            
+            input.form-check-input(type="checkbox" id="remember" name="remember")
+            label.form-check-label(for="remember") remember me
+          button.superbus-login-button Log In
+          .superbus-login-line
+            span Don't have an account?
+          button.superbus-registration-button Register

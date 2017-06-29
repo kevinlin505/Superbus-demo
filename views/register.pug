@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .superbus-registration
+    .superbus-registration-wrapper
+      .superbus-site-name
+        != h.icon('logo')
+        span Super Bus
+      .superbus-form-wrapper
+        h5 Register
+        span By creating an account, you will be able to easily manage existing bookings.
+        form(action="/register" method="POST")
+          label(for="firstname") First Name
+          input(type="text" id="firstname" name="firstname" required)
+          label(for="lastname") Last Name
+          input(type="text" id="lastname" name="lastname" required)
+          label(for="email") Email Address
+          input(type="text" id="email" name="email" required)
+          label(for="number") Phone Number
+          input(type="text" id="number" name="number" required)
+          label(for="password") Password
+          input(type="text" id="password" name="password" required)
+          label(for="password-confirm") Re-enter Password
+          input(type="text" id="password-confirm" name="password-confirm" required)
+          button.superbus-registration-button Create Account
+          .superbus-agreement By creating an account, you agree to Super Bus's #[a(href="/condition") Conditions of Use] and #[a(href="/privacy") Privacy Notice]
+          .superbus-login-line
+            span Already have account?
+          button.superbus-login-button Log In

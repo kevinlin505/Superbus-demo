@@ -1,0 +1,18 @@
+mixin getAccountForm(user)
+  form(action="/save" method="POST")
+    span
+      label(for="firstname") First Name
+      input(type="text" id="firstname" name="firstname" value=`${user.firstname || ''}` required) 
+    span
+      label(for="lastname") Last Name
+      input(type="text" id="lastname" name="lastname" value=`${user.lastname || ''}` required) 
+    span
+      label(for="email") Email Adress
+      input(type="email" id="email" name="email" value=`${user.email || ''}` required) 
+    span
+      label(for="number") Phone Number
+      input(type="text" id="number" name="number" value=`${user.number || ''}` required) 
+    span
+      label(for="password") Password
+      input(type="password" id="password" name="password" required) 
+    button.superbus-saveinfo-button Save

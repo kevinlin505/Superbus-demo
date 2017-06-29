@@ -1,0 +1,26 @@
+extends layout
+
+include mixins/_getQuoteTable
+include mixins/_getAccountForm
+
+block content
+  .superbus-account-header-section
+    .superbus-header-section
+      .superbus-message
+        h3 Your Account
+        .superbus-description In order to better connection, please always renew your information
+
+  .superbus-account-section
+    .superbus-account-info
+      .superbus-avatar-section
+        h4 Your Info
+        i.fa.fa-user-circle-o
+        span #{user.user.firstname} #{user.user.lastname}
+      .superbus-info-section
+        +getAccountForm(user.user)
+  .superbus-detail-section
+    .superbus-detail-wrapper
+      .superbus-message
+        h4 Order History
+      +getQuoteTable(quotes)
+  

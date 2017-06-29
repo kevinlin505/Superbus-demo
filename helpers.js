@@ -21,7 +21,7 @@ exports.icon = (name) => fs.readFileSync(`./public/images/icons/${name}.svg`);
 exports.siteName = `Super Bus`;
 
 exports.menu = [
-  { slug: '/quote', title: 'Charter Quote' },
+  { slug: '/home', title: 'Charter Quote' },
   { slug: '/service', title: 'Services' },
   { slug: '/about', title: 'About Us' },
   { slug: '/contact', title: 'Contact Us' }
