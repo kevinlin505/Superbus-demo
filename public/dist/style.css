@@ -105,7 +105,7 @@ li.superbus-nav-item {
   max-height: 600px;
   padding: 40px 0; }
 
-.super-quote-section {
+.superbus-quote-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,14 +461,14 @@ li.superbus-nav-item {
       margin: 30px auto 0;
       border: none; }
 
-.superbus-registration-wrapper,
-.superbus-login-wrapper {
+.superbus-login-wrapper,
+.superbus-registration-wrapper {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
   text-align: center; }
-  .superbus-registration-wrapper .superbus-site-name,
-  .superbus-login-wrapper .superbus-site-name {
+  .superbus-login-wrapper .superbus-site-name,
+  .superbus-registration-wrapper .superbus-site-name {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -477,69 +477,61 @@ li.superbus-nav-item {
             justify-content: center;
     margin: 30px 0 20px;
     text-transform: capitalize; }
-    .superbus-registration-wrapper .superbus-site-name svg,
-    .superbus-login-wrapper .superbus-site-name svg {
+    .superbus-login-wrapper .superbus-site-name svg,
+    .superbus-registration-wrapper .superbus-site-name svg {
       width: auto;
       height: 40px;
       margin-right: 10px; }
-      .superbus-registration-wrapper .superbus-site-name svg path,
-      .superbus-login-wrapper .superbus-site-name svg path {
+      .superbus-login-wrapper .superbus-site-name svg path,
+      .superbus-registration-wrapper .superbus-site-name svg path {
         fill: #f15a24; }
-
-.superbus-login-wrapper .superbus-form-wrapper,
-.superbus-registration-wrapper .superbus-form-wrapper {
-  padding: 25px 30px 45px;
-  text-align: left;
-  border: 1px solid #bbb; }
-
-.superbus-login-wrapper h5,
-.superbus-registration-wrapper h5 {
-  color: #f15a24;
-  margin-bottom: 0; }
-
-.superbus-login-wrapper span,
-.superbus-registration-wrapper span {
-  font-size: 10px;
-  color: #4d4d4d; }
-
-.superbus-login-wrapper .superbus-login-form,
-.superbus-login-wrapper .superbus-registration-form,
-.superbus-registration-wrapper .superbus-login-form,
-.superbus-registration-wrapper .superbus-registration-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.superbus-login-wrapper label,
-.superbus-registration-wrapper label {
-  margin: 15px 0 2px; }
-  .superbus-login-wrapper label.form-check-label,
-  .superbus-registration-wrapper label.form-check-label {
-    margin: 0;
-    font-size: 14px; }
-
-.superbus-login-wrapper input,
-.superbus-registration-wrapper input {
-  height: 36px;
-  padding-left: 10px; }
-  .superbus-login-wrapper input.form-check-input,
-  .superbus-registration-wrapper input.form-check-input {
-    height: 14px;
-    margin-left: 0; }
-
-.superbus-login-wrapper .superbus-check,
-.superbus-registration-wrapper .superbus-check {
-  margin: 10px 0 0; }
-
-.superbus-login-wrapper .superbus-agreement,
-.superbus-registration-wrapper .superbus-agreement {
-  font-size: 10px;
-  color: #f15a24;
-  margin: 10px 0; }
+  .superbus-login-wrapper .superbus-form-wrapper,
+  .superbus-registration-wrapper .superbus-form-wrapper {
+    padding: 25px 30px 45px;
+    text-align: left;
+    border: 1px solid #bbb; }
+    .superbus-login-wrapper .superbus-form-wrapper span,
+    .superbus-registration-wrapper .superbus-form-wrapper span {
+      font-size: 10px;
+      color: #4d4d4d; }
+  .superbus-login-wrapper h5,
+  .superbus-registration-wrapper h5 {
+    color: #f15a24;
+    margin-bottom: 0; }
+  .superbus-login-wrapper .superbus-login-form,
+  .superbus-login-wrapper .superbus-registration-form,
+  .superbus-registration-wrapper .superbus-login-form,
+  .superbus-registration-wrapper .superbus-registration-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .superbus-login-wrapper label,
+  .superbus-registration-wrapper label {
+    margin: 15px 0 2px; }
+    .superbus-login-wrapper label.form-check-label,
+    .superbus-registration-wrapper label.form-check-label {
+      margin: 0;
+      font-size: 14px; }
+  .superbus-login-wrapper input,
+  .superbus-registration-wrapper input {
+    height: 36px;
+    padding-left: 10px; }
+    .superbus-login-wrapper input.form-check-input,
+    .superbus-registration-wrapper input.form-check-input {
+      height: 14px;
+      margin-left: 0; }
+  .superbus-login-wrapper .superbus-check,
+  .superbus-registration-wrapper .superbus-check {
+    margin: 10px 0 0; }
+  .superbus-login-wrapper .superbus-agreement,
+  .superbus-registration-wrapper .superbus-agreement {
+    font-size: 10px;
+    color: #f15a24;
+    margin: 10px 0; }
 
 .superbus-login-line {
   text-align: center; }

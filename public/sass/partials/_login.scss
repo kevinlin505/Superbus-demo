@@ -1,5 +1,5 @@
-.superbus-registration-wrapper,
-.superbus-login-wrapper {
+.superbus-login-wrapper,
+.superbus-registration-wrapper {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
@@ -21,24 +21,21 @@
       }
     }
   }
-}
 
-.superbus-login-wrapper,
-.superbus-registration-wrapper {
   .superbus-form-wrapper {
     padding: 25px 30px 45px;
     text-align: left;
     border: 1px solid $theme-lightgray;
+
+    span {
+      font-size: 10px;
+      color: $theme-text;
+    }
   }
 
   h5 {
     color: $theme-orange;
     margin-bottom: 0;
-  }
-
-  span {
-    font-size: 10px;
-    color: $theme-text;
   }
 
   .superbus-login-form,
