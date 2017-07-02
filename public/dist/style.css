@@ -689,29 +689,29 @@ button.superbus-login-button {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-.superbus-terms-header-section {
-  background: url("/images/photos//quote_background.jpg");
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.superbus-terms-section {
+  font-weight: 100;
+  color: #4d4d4d;
   width: 100%;
-  padding: 40px 0; }
-  .superbus-terms-header-section .superbus-message {
-    text-align: center;
-    margin-bottom: 0; }
+  max-width: 800px;
+  margin: 0 auto; }
+  .superbus-terms-section .superbus-header-section {
+    color: #4d4d4d;
+    margin: 30px 0 0; }
+    .superbus-terms-section .superbus-header-section h3 {
+      padding: 30px 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #ddd; }
 
 .superbus-terms-content {
   width: 100%;
-  max-width: 900px;
-  padding: 40px 30px;
-  margin: 40px auto; }
+  padding: 20px 0;
+  margin: 0 auto; }
   .superbus-terms-content .superbus-terms-header {
+    font-size: 16px;
     color: #f15a24; }
   .superbus-terms-content .superbus-terms-message {
+    font-size: 12px;
     margin-bottom: 30px; }
 
 .superbus-footer-section {
