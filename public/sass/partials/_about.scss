@@ -1,0 +1,51 @@
+.superbus-about-section {
+  font-weight: 100;
+  color: $theme-text;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .superbus-header-section {
+    color: $theme-text;
+    margin: 30px 0 0;
+
+    h3 {
+      padding: 30px 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.supbus-about-message {
+  padding: 30px 0 20px;
+  border-top: 1px solid $theme-border;
+}
+
+.superbus-about-company,
+.superbus-about-team {
+  display: flex;
+  margin-bottom: 40px;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.superbus-section-header {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0 20px;
+
+  h4 {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 1200px;
+      height: 2px;
+      margin-left: 10px;
+      border-top: 1px solid $theme-border;
+      transform: translateY(-50%);
+    }
+  }
+}

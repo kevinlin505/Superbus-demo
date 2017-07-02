@@ -14,12 +14,24 @@ exports.getQuote = (req, res) => {
 exports.accountPage = (req, res) => {
   const quotes = sample['brooklyn'];
   res.render('account', { title: 'Account info', user, quotes });
-}
+};
 
 exports.loginPage = (req, res) => {
   res.render('login', { title: 'Login' });
-}
+};
 
 exports.registerPage = (req, res) => {
   res.render('register', { title: 'Register' });
-}
+};
+
+exports.faqPage = (req, res) => {
+  res.render('faq', { title: 'FAQ' });
+};
+
+exports.aboutPage = (req, res) => {
+  res.render('about', { title: 'About Us' });
+};
+
+exports.termsPage = (req, res) => {
+  res.render('terms', { title: 'Terms and Policy' });
+};

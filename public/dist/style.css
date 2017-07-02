@@ -3,7 +3,15 @@ body {
 
 input {
   font-weight: 100;
-  color: #333; }
+  color: #333;
+  padding: 0 10px;
+  min-height: 40px; }
+
+.superbus-hidden {
+  display: none; }
+
+.superbus-invisible {
+  visibility: hidden; }
 
 html, body, ul, li {
   margin: 0;
@@ -26,6 +34,9 @@ a, a:hover {
 button {
   cursor: pointer;
   border: none; }
+
+*:focus {
+  outline: none !important; }
 
 .superbus-nav {
   background: #fff;
@@ -230,6 +241,12 @@ li.superbus-nav-item {
     margin: 15px 0; }
   .superbus-experience p {
     font-size: 12px; }
+
+@media only screen and (max-width: 768px) {
+  .superbus-testimony-wrapper .superbus-subheader:last-child {
+    display: none; }
+  .superbus-experiences {
+    display: none; } }
 
 .superbus-photo-wall {
   background: #666;
@@ -584,6 +601,118 @@ button.superbus-login-button {
   color: #fff;
   height: 40px;
   margin-top: 20px; }
+
+.superbus-faq-header-section {
+  background: url("/images/photos//quote_background.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 40px 0; }
+  .superbus-faq-header-section .superbus-message {
+    text-align: center;
+    margin-bottom: 0; }
+  .superbus-faq-header-section .superbus-faq-search {
+    position: relative; }
+  .superbus-faq-header-section input {
+    width: 600px;
+    margin-top: 20px;
+    padding-left: 40px; }
+  .superbus-faq-header-section .fa {
+    font-size: 20px;
+    color: #bbb;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.superbus-faq-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 30px;
+  margin: 40px auto; }
+  .superbus-faq-content .superbus-faq-question {
+    color: #f15a24; }
+  .superbus-faq-content .superbus-faq-answer {
+    margin-bottom: 30px; }
+
+@media only screen and (max-width: 768px) {
+  .superbus-faq-header-section input {
+    width: 100%; } }
+
+.superbus-about-section {
+  font-weight: 100;
+  color: #4d4d4d;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+  .superbus-about-section .superbus-header-section {
+    color: #4d4d4d;
+    margin: 30px 0 0; }
+    .superbus-about-section .superbus-header-section h3 {
+      padding: 30px 0;
+      margin-bottom: 0; }
+
+.supbus-about-message {
+  padding: 30px 0 20px;
+  border-top: 1px solid #ddd; }
+
+.superbus-about-company,
+.superbus-about-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+  .superbus-about-company img,
+  .superbus-about-team img {
+    margin-right: 20px; }
+
+.superbus-section-header {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0 20px; }
+  .superbus-section-header h4::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1200px;
+    height: 2px;
+    margin-left: 10px;
+    border-top: 1px solid #ddd;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.superbus-terms-header-section {
+  background: url("/images/photos//quote_background.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 40px 0; }
+  .superbus-terms-header-section .superbus-message {
+    text-align: center;
+    margin-bottom: 0; }
+
+.superbus-terms-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 30px;
+  margin: 40px auto; }
+  .superbus-terms-content .superbus-terms-header {
+    color: #f15a24; }
+  .superbus-terms-content .superbus-terms-message {
+    margin-bottom: 30px; }
 
 .superbus-footer-section {
   text-align: center;

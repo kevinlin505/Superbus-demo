@@ -1,5 +1,5 @@
 mixin getQuoteForm(request={})
-  form.superbus-form(action="/quote" method="POSt")
+  form.superbus-form(action="/quote" method="POST")
     span.superbus-input-wrapper.superbus-location-wrapper
       span.superbus-location-pickup
         input.superbus-location(type="text" id="pickup" name="pickup" placeholder="Location: pick up" value=`${request.pickup || ''}` required)

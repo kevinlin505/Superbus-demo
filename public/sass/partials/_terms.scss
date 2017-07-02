@@ -1,0 +1,28 @@
+.superbus-terms-header-section {
+  background: url($image-path + '/quote_background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+
+  .superbus-message {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.superbus-terms-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 30px;
+  margin: 40px auto;
+
+  .superbus-terms-header {
+    color: $theme-orange;
+  }
+
+  .superbus-terms-message {
+    margin-bottom: 30px;
+  }
+}

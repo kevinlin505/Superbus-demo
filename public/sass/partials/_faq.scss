@@ -1,0 +1,55 @@
+.superbus-faq-header-section {
+  background: url($image-path + '/quote_background.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+
+  .superbus-message {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .superbus-faq-search {
+    position: relative;
+  }
+
+  input {
+    width: 600px;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+
+  .fa {
+    font-size: 20px;
+    color: $theme-lightgray;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+}
+
+.superbus-faq-content {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px 30px;
+  margin: 40px auto;
+
+  .superbus-faq-question {
+    color: $theme-orange;
+  }
+
+  .superbus-faq-answer {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .superbus-faq-header-section {
+    input {
+      width: 100%;
+    }
+  }
+}

@@ -22,9 +22,9 @@ exports.siteName = `Super Bus`;
 
 exports.menu = [
   { slug: '/home', title: 'Charter Quote' },
-  { slug: '/service', title: 'Services' },
   { slug: '/about', title: 'About Us' },
-  { slug: '/contact', title: 'Contact Us' }
+  { slug: '/faq', title: 'FAQ' },
+  { slug: '/terms', title: 'Terms' }
 ];
 
 exports.experiences = [

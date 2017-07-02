@@ -18,4 +18,14 @@ body {
 input {
   font-weight: 100;
   color: $theme-lightblack;
+  padding: 0 10px;
+  min-height: 40px;
+}
+
+.superbus-hidden {
+  display: none;
+}
+
+.superbus-invisible {
+  visibility: hidden;
 }

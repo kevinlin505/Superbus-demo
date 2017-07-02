@@ -8,8 +8,13 @@ router.get('/home', charterController.homePage);
 router.get('/login', charterController.loginPage);
 router.get('/register', charterController.registerPage);
 
-router.post('/quote', charterController.getQuote);
+// Misc
+router.get('/about', charterController.aboutPage);
+router.get('/terms', charterController.termsPage);
+router.get('/faq', charterController.faqPage);
 
+// APi
+router.post('/quote', charterController.getQuote);
 router.post('/account', charterController.accountPage);
 
 module.exports = router;

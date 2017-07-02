@@ -22,3 +22,8 @@ button {
   cursor: pointer;
   border: none;
 }
+
+// This is not recommended, but as for now will remove outline for demo purposes.
+*:focus {
+  outline: none !important;
+}

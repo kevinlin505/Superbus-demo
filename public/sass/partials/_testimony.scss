@@ -57,3 +57,17 @@
     font-size: 12px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .superbus-testimony-wrapper {
+    .superbus-subheader {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .superbus-experiences {
+    display: none;
+  }
+}
